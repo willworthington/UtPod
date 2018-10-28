@@ -80,7 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/willworthington/CLionProjects/UtPod/Song.cpp">
+			<Option target="UtPod"/>
+		</Unit>
 		<Unit filename="C:/Users/willworthington/CLionProjects/UtPod/Song.h">
+			<Option target="UtPod"/>
+		</Unit>
+		<Unit filename="C:/Users/willworthington/CLionProjects/UtPod/UtPod.cpp">
 			<Option target="UtPod"/>
 		</Unit>
 		<Unit filename="C:/Users/willworthington/CLionProjects/UtPod/UtPod.h">

@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/willworthington/CLionProjects/UtPod/Song.cpp" "C:/Users/willworthington/CLionProjects/UtPod/cmake-build-debug/CMakeFiles/UtPod.dir/Song.cpp.obj"
+  "C:/Users/willworthington/CLionProjects/UtPod/UtPod.cpp" "C:/Users/willworthington/CLionProjects/UtPod/cmake-build-debug/CMakeFiles/UtPod.dir/UtPod.cpp.obj"
   "C:/Users/willworthington/CLionProjects/UtPod/main.cpp" "C:/Users/willworthington/CLionProjects/UtPod/cmake-build-debug/CMakeFiles/UtPod.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")

@@ -8,12 +8,24 @@
 #define UTPOD_SONG_H
 using namespace std;
 
-class UtPod_Song {
+class Song {
 
 private:
     string title;
     string artist;
     int size;
+
+public:
+    Song();
+    Song(string title);
+    Song(string title, string artist, int size);
+
+    string getTitle() const;
+    void setTitle(string t);
+    string getArtist() const;
+    void setArtist(string a);
+    int getSize() const;
+    void setSize(int s);
 
 };
 

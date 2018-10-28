@@ -124,6 +124,60 @@ UtPod\fast:
 	$(MAKE) -f CMakeFiles\UtPod.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UtPod.dir\build
 .PHONY : UtPod\fast
 
+Song.obj: Song.cpp.obj
+
+.PHONY : Song.obj
+
+# target to build an object file
+Song.cpp.obj:
+	$(MAKE) -f CMakeFiles\UtPod.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UtPod.dir\Song.cpp.obj
+.PHONY : Song.cpp.obj
+
+Song.i: Song.cpp.i
+
+.PHONY : Song.i
+
+# target to preprocess a source file
+Song.cpp.i:
+	$(MAKE) -f CMakeFiles\UtPod.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UtPod.dir\Song.cpp.i
+.PHONY : Song.cpp.i
+
+Song.s: Song.cpp.s
+
+.PHONY : Song.s
+
+# target to generate assembly for a file
+Song.cpp.s:
+	$(MAKE) -f CMakeFiles\UtPod.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UtPod.dir\Song.cpp.s
+.PHONY : Song.cpp.s
+
+UtPod.obj: UtPod.cpp.obj
+
+.PHONY : UtPod.obj
+
+# target to build an object file
+UtPod.cpp.obj:
+	$(MAKE) -f CMakeFiles\UtPod.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UtPod.dir\UtPod.cpp.obj
+.PHONY : UtPod.cpp.obj
+
+UtPod.i: UtPod.cpp.i
+
+.PHONY : UtPod.i
+
+# target to preprocess a source file
+UtPod.cpp.i:
+	$(MAKE) -f CMakeFiles\UtPod.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UtPod.dir\UtPod.cpp.i
+.PHONY : UtPod.cpp.i
+
+UtPod.s: UtPod.cpp.s
+
+.PHONY : UtPod.s
+
+# target to generate assembly for a file
+UtPod.cpp.s:
+	$(MAKE) -f CMakeFiles\UtPod.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UtPod.dir\UtPod.cpp.s
+.PHONY : UtPod.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -160,6 +214,12 @@ help:
 	@echo ... UtPod
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Song.obj
+	@echo ... Song.i
+	@echo ... Song.s
+	@echo ... UtPod.obj
+	@echo ... UtPod.i
+	@echo ... UtPod.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

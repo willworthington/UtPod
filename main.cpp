@@ -27,6 +27,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
+    /*
     UtPod t;
 
     Song s1("Beatles", "Hey Jude1", 4);
@@ -81,5 +82,6 @@ int main(int argc, char *argv[])
     t.showSongList();
     cout << "memory = " << t.getRemainingMemory() << endl;
 
+     */
 
 }
