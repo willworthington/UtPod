@@ -20,6 +20,7 @@ You will want to do more complete testing.
 */
 #include <cstdlib>
 #include <iostream>
+#include <string>
 #include "Song.h"
 #include "UtPod.h"
 
@@ -27,20 +28,26 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    /*
+
     UtPod t;
 
-    Song s1("Beatles", "Hey Jude1", 4);
+    Song s1("Hey Jude1", "Beatles", 4);
     int result = t.addSong(s1);
+    int result2 = t.getRemainingMemory();
     cout << "result = " << result << endl;
+    cout << "remaining = " << result2 << endl;
 
-    t.showSongList();
+
+
+    t.showSongList();/*
 
     Song s2("Beatles", "Hey Jude2", 5);
     result = t.addSong(s2);
+    result2 = t.getRemainingMemory();
     cout << "result = " << result << endl;
+    cout << "remaining = " << result2 << endl;
 
-    t.showSongList();
+    t.showSongList();/*
 
     Song s3("Beatles", "Hey Jude3", 6);
     result = t.addSong(s3);

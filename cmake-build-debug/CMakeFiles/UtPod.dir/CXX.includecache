@@ -15,11 +15,15 @@ iostream
 C:/Users/willworthington/CLionProjects/UtPod/UtPod.h
 Song.h
 C:/Users/willworthington/CLionProjects/UtPod/Song.h
+iostream
+-
 
 C:/Users/willworthington/CLionProjects/UtPod/main.cpp
 cstdlib
 -
 iostream
+-
+string
 -
 Song.h
 C:/Users/willworthington/CLionProjects/UtPod/Song.h

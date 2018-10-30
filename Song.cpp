@@ -43,3 +43,7 @@ using namespace std;
     void Song::setSize(int s){
         size = s;
     }
+
+    Song::~Song(){
+
+    }

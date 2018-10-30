@@ -27,6 +27,7 @@ public:
     int getSize() const;
     void setSize(int s);
 
+    ~Song();
 };
 
 
