@@ -37,9 +37,24 @@ int main(int argc, char *argv[])
     cout << "result = " << result << endl;
     cout << "remaining = " << result2 << endl;
 
+    Song s2("Hey Jude2", "Beatles", 5);
+    result = t.addSong(s2);
+    result2 = t.getRemainingMemory();
+    cout << "result = " << result << endl;
+    cout << "remaining = " << result2 << endl;
+
+    t.showSongList();
 
 
-    t.showSongList();/*
+    //Testing removing a song from the list
+    cout << endl << "**Testing removal of a song from UtPod**" << endl;
+    result = t.removeSong(s1);
+    cout << "Was it found? (0:y, -2:n) = " << result << endl;
+    result2 = t.getRemainingMemory();
+    cout << "Remaining Memory = " << result2 << endl;
+    t.showSongList();
+
+    /*
 
     Song s2("Beatles", "Hey Jude2", 5);
     result = t.addSong(s2);

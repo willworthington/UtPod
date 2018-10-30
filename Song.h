@@ -27,6 +27,8 @@ public:
     int getSize() const;
     void setSize(int s);
 
+    bool operator ==(Song const &rhs);
+
     ~Song();
 };
 

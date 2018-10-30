@@ -44,6 +44,13 @@ using namespace std;
         size = s;
     }
 
-    Song::~Song(){
+    bool Song::operator ==(Song const &rhs){
+        return (title==rhs.getTitle() &&
+                artist==rhs.getArtist() &&
+                size==rhs.getSize());
+    }
+
+
+Song::~Song(){
 
     }

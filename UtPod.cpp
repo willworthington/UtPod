@@ -10,7 +10,6 @@ using namespace std;
 
     UtPod::UtPod() {
         songs = nullptr;
-        //songs->next= NULL;
         memSize = 512;
     }
 
@@ -24,18 +23,38 @@ using namespace std;
             return NO_MEMORY;
         }
         else {
-            SongNode *temp = new SongNode;
-            temp->next=songs;
-            temp->s = s;
-            songs=temp;
+            SongNode *tmp = new SongNode;
+            tmp->next=songs;
+            tmp->s = s;
+            songs=tmp;
             return SUCCESS;
         }
 
     }
 
-    //probably will need to use delete function to free the memory
     int UtPod::removeSong(Song const &s){
-        return 0;
+        SongNode *tmp = songs;
+        //if the first node holds the song we're looking for
+        if (songs->s==s){
+            songs = NULL;
+            return SUCCESS;
+        }
+        //if any node after the first holds the song we're looking for
+        else {
+            while (tmp->next != nullptr){
+                if (tmp->next->s==s){
+                    SongNode *found = tmp->next;
+                    tmp->next=tmp->next->next;
+                    delete found;
+                    return SUCCESS;
+                }
+                else{
+                    tmp = tmp->next;
+                }
+            }
+        }
+        //if the song is never found in UtPod
+        return NOT_FOUND;
     }
 
     void UtPod::shuffle(){
@@ -45,14 +64,20 @@ using namespace std;
     void UtPod::showSongList(){
         SongNode *tmp = songs;
         while (tmp != nullptr){
-            string tmpTitle = tmp->s.getTitle();
+            //string tmpTitle = tmp->s.getTitle();
             string tmpArtist = tmp->s.getArtist();
-            cout << tmpTitle << " " << tmpArtist << endl;
+            cout << tmp->s.getTitle() << ", "
+            << tmp->s.getArtist() << ", "
+            << tmp->s.getSize() << " MB" << endl;
             tmp=tmp->next;
         }
     }
 
     void UtPod::sortSongList(){
+
+    }
+
+    void UtPod::clearMemory(){
 
     }
 

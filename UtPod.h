@@ -30,9 +30,11 @@ public:
 
     int addSong(Song const &s);
     int removeSong(Song const &s);
+    void swapSongs();
     void shuffle();
     void showSongList();
     void sortSongList();
+    void clearMemory();
 
     int getTotalMemory() {
         return memSize;
