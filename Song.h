@@ -26,10 +26,14 @@ public:
     void setArtist(string a);
     int getSize() const;
     void setSize(int s);
+    void swap(Song &s);
 
+
+    bool operator < (Song const &rhs);
+    bool operator > (Song const &rhs);
     bool operator ==(Song const &rhs);
 
-    ~Song();
+    //~Song();
 };
 
 

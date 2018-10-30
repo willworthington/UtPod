@@ -30,11 +30,13 @@ public:
 
     int addSong(Song const &s);
     int removeSong(Song const &s);
-    void swapSongs();
+    //void swapSongs(SongNode &s);
     void shuffle();
     void showSongList();
     void sortSongList();
     void clearMemory();
+    int getNumSongs();
+    bool bubbleSort();
 
     int getTotalMemory() {
         return memSize;
