@@ -30,7 +30,6 @@ public:
 
     int addSong(Song const &s);
     int removeSong(Song const &s);
-    //void swapSongs(SongNode &s);
     void shuffle();
     void showSongList();
     void sortSongList();

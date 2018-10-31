@@ -31,17 +31,18 @@ void testSongBoolOps();
 void testGetNumSongs();
 void testClearMemory();
 void testSortSongList();
+void testShuffle();
 
 int main(int argc, char *argv[])
 {
-    //testSwap();
-    //testSongBoolOps();
-    //testGetNumSongs();
-    //testClearMemory();
+    testSwap();
+    testSongBoolOps();
+    testGetNumSongs();
+    testClearMemory();
     testSortSongList();
+    testShuffle();
 
-
-/*
+    /*
     UtPod t;
 
     Song s1("Hey Jude1", "Beatles", 4);
@@ -61,23 +62,6 @@ int main(int argc, char *argv[])
     t.sortSongList();
     t.showSongList();
 
-    //Testing removing a song from the list
-    cout << endl << "**Testing removal of a song from UtPod**" << endl;
-    result = t.removeSong(s1);
-    cout << "Was it found? (0:y, -2:n) = " << result << endl;
-    result2 = t.getRemainingMemory();
-    cout << "Remaining Memory = " << result2 << endl;
-    t.showSongList();
-
-    /*
-
-    Song s2("Beatles", "Hey Jude2", 5);
-    result = t.addSong(s2);
-    result2 = t.getRemainingMemory();
-    cout << "result = " << result << endl;
-    cout << "remaining = " << result2 << endl;
-
-    t.showSongList();/*
 
     Song s3("Beatles", "Hey Jude3", 6);
     result = t.addSong(s3);
@@ -118,8 +102,8 @@ int main(int argc, char *argv[])
 
     t.showSongList();
     cout << "memory = " << t.getRemainingMemory() << endl;
+    */
 
-     */
 
 }
 
@@ -134,6 +118,7 @@ void testSwap(){
     s1.swap(s2);
     cout << "After swap:" << endl << "s1 = " << s1.getTitle()
          << ", s2 = " << s2.getTitle() << endl;
+    cout << endl << endl;
 }
 
 void testGetNumSongs(){
@@ -151,6 +136,8 @@ void testGetNumSongs(){
     t.removeSong(s1);
     t.removeSong(s2);
     cout << "Number of songs after removing those 2: " <<t.getNumSongs() << endl;
+
+    cout << endl << endl;
 
 }
 
@@ -172,6 +159,7 @@ void testSongBoolOps(){
     cout << "Testing '==':" << endl
     << "Should return false (testing '=='): " << (s1==s2) << endl << endl;
 
+    cout << endl << endl;
 
 }
 
@@ -190,6 +178,8 @@ void testClearMemory(){
     cout << "Just added 2 songs to UtPod: " << t.getNumSongs() << endl;
     t.clearMemory();
     cout << "Number of songs after calling clearMemory(): " << t.getNumSongs() << endl;
+
+    cout << endl << endl;
 
 }
 
@@ -239,5 +229,51 @@ void testSortSongList(){
     cout << "---After sort:" << endl;
     t.sortSongList();
     t.showSongList();
+
+    cout << endl << endl;
+
+}
+
+void testShuffle(){
+    cout << "**Testing shuffle() function**" << endl;
+
+    UtPod t;
+
+    cout << "***********************" << endl << "Empty list:" << endl;
+    t.showSongList();
+    cout << "Shuffling empty list:" << endl;
+    t.shuffle();
+    t.showSongList();
+
+    cout << endl << "***********************" << endl << "List of one:" << endl;
+    Song s3("a", "albert", 5);
+    t.addSong(s3);
+    t.showSongList();
+    cout << "After shuffle:" << endl;
+    t.shuffle();
+    t.showSongList();
+
+
+    Song s4("b", "bob", 2);
+    t.addSong(s4);
+    Song s5("c", "carl", 5);
+    t.addSong(s5);
+    Song s6("d", "daniel", 3);
+    t.addSong(s6);
+    Song s7("e", "evan", 5);
+    t.addSong(s7);
+    Song s8("f", "frank", 5);
+    t.addSong(s8);
+
+    cout << endl << "***********************" << endl << "Long List:" << endl;
+    t.showSongList();
+    t.shuffle();
+    cout << endl << "After Shuffle:" << endl;
+    t.showSongList();
+    t.shuffle();
+    cout << endl << "Shuffled Again:" << endl;
+    t.showSongList();
+
+    cout << endl << endl;
 
 }

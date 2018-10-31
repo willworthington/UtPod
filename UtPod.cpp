@@ -3,6 +3,7 @@
 //
 #include <iostream>
 #include <string>
+#include <time.h>
 #include "UtPod.h"
 #include "Song.h"
 
@@ -70,8 +71,40 @@ using namespace std;
     }
 
     void UtPod::shuffle(){
+        int length = getNumSongs();
+        if (length < 2){
+            //Don't do shit :)
+        }
+        else {
+            srand(time(NULL));
+            int s1, s2;
+            SongNode *tmp1, *tmp2;
+            //int s2;
+            //SongNode *tmp2;
+            for (int iter=0; iter<2*length; iter++){
+                tmp1 = songs;
+                tmp2 = songs;
+                s1 = rand() % length;
+                s2 = rand() % length;
+                for (int i=0; i<s1; i++){
+                    tmp1=tmp1->next;
+                }
+                for (int i=0; i<s2; i++){
+                    tmp2=tmp2->next;
+                }
+                tmp1->s.swap(tmp2->s);
+            }
+
+            //cout << "Index1: " << s1 << ", Song1: " << tmp1->s.getTitle() << endl;
+            //cout << "Index2: " << s2 << ", Song2: " << tmp2->s.getTitle() << endl;
+
+
+
+        }
 
     }
+
+
 
     void UtPod::showSongList(){
         SongNode *tmp = songs;
