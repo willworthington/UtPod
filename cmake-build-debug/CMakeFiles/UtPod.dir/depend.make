@@ -8,7 +8,7 @@ CMakeFiles\UtPod.dir\UtPod.cpp.obj: ..\Song.h
 CMakeFiles\UtPod.dir\UtPod.cpp.obj: ..\UtPod.cpp
 CMakeFiles\UtPod.dir\UtPod.cpp.obj: ..\UtPod.h
 
-CMakeFiles\UtPod.dir\main.cpp.obj: ..\Song.h
-CMakeFiles\UtPod.dir\main.cpp.obj: ..\UtPod.h
-CMakeFiles\UtPod.dir\main.cpp.obj: ..\main.cpp
+CMakeFiles\UtPod.dir\UtPodDriver.cpp.obj: ..\Song.h
+CMakeFiles\UtPod.dir\UtPodDriver.cpp.obj: ..\UtPod.h
+CMakeFiles\UtPod.dir\UtPodDriver.cpp.obj: ..\UtPodDriver.cpp
 

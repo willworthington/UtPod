@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/UtPod.dir/main.cpp.obj"
+  "CMakeFiles/UtPod.dir/UtPodDriver.cpp.obj"
   "CMakeFiles/UtPod.dir/Song.cpp.obj"
   "CMakeFiles/UtPod.dir/UtPod.cpp.obj"
   "UtPod.pdb"

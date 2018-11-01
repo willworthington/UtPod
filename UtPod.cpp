@@ -10,12 +10,12 @@
 using namespace std;
 
     UtPod::UtPod() {
-        songs = nullptr;
+        songs = NULL;
         memSize = MAX_MEMORY;
     }
 
     UtPod::UtPod(int size) {
-        songs = nullptr;
+        songs = NULL;
         if ((size<=0)||(size>512)){
             memSize = MAX_MEMORY;
         }
@@ -54,7 +54,7 @@ using namespace std;
         }
         //if any node after the first holds the song we're looking for
         else {
-            while (tmp->next != nullptr){
+            while (tmp->next != NULL){
                 if (tmp->next->s==s){
                     SongNode *found = tmp->next;
                     tmp->next=tmp->next->next;
@@ -108,7 +108,7 @@ using namespace std;
 
     void UtPod::showSongList(){
         SongNode *tmp = songs;
-        while (tmp != nullptr){
+        while (tmp != NULL){
             cout << tmp->s.getTitle() << ", "
             << tmp->s.getArtist() << ", "
             << tmp->s.getSize() << " MB" << endl;
@@ -179,7 +179,7 @@ using namespace std;
     int UtPod::getRemainingMemory(){
         int remaining = memSize;
         SongNode *tmp = songs;
-        while (tmp != nullptr){
+        while (tmp != NULL){
             remaining-=tmp->s.getSize();
             tmp = tmp->next;
         }

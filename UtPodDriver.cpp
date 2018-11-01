@@ -26,86 +26,73 @@ You will want to do more complete testing.
 
 using namespace std;
 
+void testGetTotalMemory();
+void testGetRemainingMemory();
 void testSwap();
 void testSongBoolOps();
 void testGetNumSongs();
 void testClearMemory();
 void testSortSongList();
 void testShuffle();
+void recommendedTestDriver();
 
 int main(int argc, char *argv[])
 {
+
+    testGetTotalMemory();
+    testGetRemainingMemory();
     testSwap();
     testSongBoolOps();
     testGetNumSongs();
     testClearMemory();
     testSortSongList();
     testShuffle();
+    recommendedTestDriver();
 
     /*
-    UtPod t;
 
-    Song s1("Hey Jude1", "Beatles", 4);
-    int result = t.addSong(s1);
-    int result2 = t.getRemainingMemory();
-    cout << "result = " << result << endl;
-    cout << "remaining = " << result2 << endl;
-
-    Song s2("Hey Jude2", "Beatles", 5);
-    result = t.addSong(s2);
-    result2 = t.getRemainingMemory();
-    cout << "result = " << result << endl;
-    cout << "remaining = " << result2 << endl;
-    t.showSongList();
-
-    cout << "Re-sorted: " << endl;
-    t.sortSongList();
-    t.showSongList();
-
-
-    Song s3("Beatles", "Hey Jude3", 6);
-    result = t.addSong(s3);
-    cout << "result = " << result << endl;
-
-    Song s4("Beatles", "Hey Jude4", 7);
-    result = t.addSong(s4);
-    cout << "result = " << result << endl;
-
-    Song s5("Beatles", "Hey Jude5", 241);
-    result = t.addSong(s5);
-    cout << "add result = " << result << endl;
-
-    t.showSongList();
-
-    result = t.removeSong(s2);
-    cout << "delete result = " << result << endl;
-
-    result = t.removeSong(s3);
-    cout << "delete result = " << result << endl;
-
-    t.showSongList();
-
-    result = t.removeSong(s1);
-    cout << "delete result = " << result << endl;
-
-    result = t.removeSong(s5);
-    cout << "delete result = " << result << endl;
-
-    result = t.removeSong(s4);
-    cout << "delete result = " << result << endl;
-
-
-    t.showSongList();
-
-    result = t.addSong(s5);
-    cout << "add result = " << result << endl;
-
-    t.showSongList();
-    cout << "memory = " << t.getRemainingMemory() << endl;
     */
 
 
 }
+
+void testGetTotalMemory(){
+    cout << "**Testing getTotalMemory() function**" << endl;
+
+    UtPod t1;
+    cout << "UtPod t1 total memory = " << t1.getTotalMemory() << endl;
+
+    UtPod t2(5);
+    cout << "UtPod t2 total memory = " << t2.getTotalMemory() << endl;
+
+    UtPod t3(0);
+    cout << "UtPod t3 total memory = " << t3.getTotalMemory() << endl;
+
+    UtPod t4(-10);
+    cout << "UtPod t4 total memory = " << t4.getTotalMemory() << endl;
+
+    UtPod t5(600);
+    cout << "UtPod t5 total memory = " << t5.getTotalMemory() << endl;
+
+
+    cout << endl << endl;
+}
+
+void testGetRemainingMemory(){
+    cout << "**Testing getRemainingMemory() function**" << endl;
+    UtPod t;
+
+    Song s1("Abcd", "John", 6);
+    t.addSong(s1);
+    cout << "Result 1 = " << t.getRemainingMemory() << endl;
+    Song s2("qwerty", "Ben", 200);
+    t.addSong(s2);
+    cout << "Result 2 = " << t.getRemainingMemory() << endl;
+    Song s3("Too big", "Jerk", 307);
+    cout << "Should return NO_MEMORY (-1): " << t.addSong(s3) << endl;
+    cout << "Result 3 = " << t.getRemainingMemory() << " (should be same as Result 2)" << endl;
+
+    cout << endl << endl;}
 
 void testSwap(){
     cout << "**Testing swap() function**" << endl;
@@ -211,11 +198,11 @@ void testSortSongList(){
     t.sortSongList();
     t.showSongList();
 
-    Song s3("Hey Jude3", "Beatles", 5);
+    Song s3("Hey John", "Beatles", 5);
     t.addSong(s3);
-    Song s4("Hey Jude2", "Beatles", 2);
+    Song s4("Hey John", "Beatles", 2);
     t.addSong(s4);
-    Song s5("Hey Jude1", "Apple", 5);
+    Song s5("Hey John", "Apple", 5);
     t.addSong(s5);
     Song s6("abcd", "Alpha", 3);
     t.addSong(s6);
@@ -275,5 +262,66 @@ void testShuffle(){
     t.showSongList();
 
     cout << endl << endl;
+
+}
+
+void recommendedTestDriver(){
+    cout << "**This is the general driver created to help us get started with the code**" << endl;
+
+
+    UtPod t;
+
+    Song s1("Beatles", "Hey Jude1", 4);
+    int result = t.addSong(s1);
+    cout << "result = " << result << endl;
+
+    t.showSongList();
+
+    Song s2("Beatles", "Hey Jude2", 5);
+    result = t.addSong(s2);
+    cout << "result = " << result << endl;
+
+    t.showSongList();
+
+    Song s3("Beatles", "Hey Jude3", 6);
+    result = t.addSong(s3);
+    cout << "result = " << result << endl;
+
+    Song s4("Beatles", "Hey Jude4", 7);
+    result = t.addSong(s4);
+    cout << "result = " << result << endl;
+
+    Song s5("Beatles", "Hey Jude5", 241);
+    result = t.addSong(s5);
+    cout << "add result = " << result << endl;
+
+    t.showSongList();
+
+    result = t.removeSong(s2);
+    cout << "delete result = " << result << endl;
+
+    result = t.removeSong(s3);
+    cout << "delete result = " << result << endl;
+
+    t.showSongList();
+
+    result = t.removeSong(s1);
+    cout << "delete result = " << result << endl;
+
+    result = t.removeSong(s5);
+    cout << "delete result = " << result << endl;
+
+    result = t.removeSong(s4);
+    cout << "delete result = " << result << endl;
+
+
+    t.showSongList();
+
+    result = t.addSong(s5);
+    cout << "add result = " << result << endl;
+
+    t.showSongList();
+    cout << "memory = " << t.getRemainingMemory() << endl;
+
 
 }

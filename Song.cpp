@@ -53,11 +53,11 @@ using namespace std;
 
 
     bool Song::operator < (Song const &rhs){
-        if (title<rhs.getTitle()) return true;
-        else if (title>rhs.getTitle()) return false;
+        if (artist<rhs.getArtist()) return true;
+        else if (artist>rhs.getArtist()) return false;
         else{
-            if (artist<rhs.getArtist()) return true;
-            else if (artist>rhs.getArtist()) return false;
+            if (title<rhs.getTitle()) return true;
+            else if (title>rhs.getTitle()) return false;
             else {
                 if (size<rhs.getSize()) return true;
                 else return false;
@@ -67,11 +67,11 @@ using namespace std;
     }
 
     bool Song::operator > (Song const &rhs){
-        if (title>rhs.getTitle()) return true;
-        else if (title<rhs.getTitle()) return false;
+        if (artist>rhs.getArtist()) return true;
+        else if (artist<rhs.getArtist()) return false;
         else {
-            if (artist > rhs.getArtist()) return true;
-            else if (artist < rhs.getArtist()) return false;
+            if (title > rhs.getTitle()) return true;
+            else if (title < rhs.getTitle()) return false;
             else {
                 if (size > rhs.getSize()) return true;
                 else return false;

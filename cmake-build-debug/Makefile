@@ -178,32 +178,32 @@ UtPod.cpp.s:
 	$(MAKE) -f CMakeFiles\UtPod.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UtPod.dir\UtPod.cpp.s
 .PHONY : UtPod.cpp.s
 
-main.obj: main.cpp.obj
+UtPodDriver.obj: UtPodDriver.cpp.obj
 
-.PHONY : main.obj
+.PHONY : UtPodDriver.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\UtPod.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UtPod.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+UtPodDriver.cpp.obj:
+	$(MAKE) -f CMakeFiles\UtPod.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UtPod.dir\UtPodDriver.cpp.obj
+.PHONY : UtPodDriver.cpp.obj
 
-main.i: main.cpp.i
+UtPodDriver.i: UtPodDriver.cpp.i
 
-.PHONY : main.i
+.PHONY : UtPodDriver.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\UtPod.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UtPod.dir\main.cpp.i
-.PHONY : main.cpp.i
+UtPodDriver.cpp.i:
+	$(MAKE) -f CMakeFiles\UtPod.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UtPod.dir\UtPodDriver.cpp.i
+.PHONY : UtPodDriver.cpp.i
 
-main.s: main.cpp.s
+UtPodDriver.s: UtPodDriver.cpp.s
 
-.PHONY : main.s
+.PHONY : UtPodDriver.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\UtPod.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UtPod.dir\main.cpp.s
-.PHONY : main.cpp.s
+UtPodDriver.cpp.s:
+	$(MAKE) -f CMakeFiles\UtPod.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UtPod.dir\UtPodDriver.cpp.s
+.PHONY : UtPodDriver.cpp.s
 
 # Help Target
 help:
@@ -220,9 +220,9 @@ help:
 	@echo ... UtPod.obj
 	@echo ... UtPod.i
 	@echo ... UtPod.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... UtPodDriver.obj
+	@echo ... UtPodDriver.i
+	@echo ... UtPodDriver.s
 .PHONY : help
 
 

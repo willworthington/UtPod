@@ -92,7 +92,7 @@
 		<Unit filename="C:/Users/willworthington/CLionProjects/UtPod/UtPod.h">
 			<Option target="UtPod"/>
 		</Unit>
-		<Unit filename="C:/Users/willworthington/CLionProjects/UtPod/main.cpp">
+		<Unit filename="C:/Users/willworthington/CLionProjects/UtPod/UtPodDriver.cpp">
 			<Option target="UtPod"/>
 		</Unit>
 		<Unit filename="C:/Users/willworthington/CLionProjects/UtPod/CMakeLists.txt">

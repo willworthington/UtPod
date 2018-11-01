@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/willworthington/CLionProjects/UtPod/Song.cpp" "C:/Users/willworthington/CLionProjects/UtPod/cmake-build-debug/CMakeFiles/UtPod.dir/Song.cpp.obj"
   "C:/Users/willworthington/CLionProjects/UtPod/UtPod.cpp" "C:/Users/willworthington/CLionProjects/UtPod/cmake-build-debug/CMakeFiles/UtPod.dir/UtPod.cpp.obj"
-  "C:/Users/willworthington/CLionProjects/UtPod/main.cpp" "C:/Users/willworthington/CLionProjects/UtPod/cmake-build-debug/CMakeFiles/UtPod.dir/main.cpp.obj"
+  "C:/Users/willworthington/CLionProjects/UtPod/UtPodDriver.cpp" "C:/Users/willworthington/CLionProjects/UtPod/cmake-build-debug/CMakeFiles/UtPod.dir/UtPodDriver.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
